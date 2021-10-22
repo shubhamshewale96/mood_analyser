@@ -2,6 +2,9 @@ package mood_analyser;
 
 public class MoodAnalyser {
 	public static String analyseMood(String message) {
-        return "Sad";
+		if (message.toLowerCase().contains("sad")) {
+            return "Sad";
+        }
+        return "Happy";
     }
 }
